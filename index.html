@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aayush Ranjan - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- Header -->
+ <header class="header">
+  <div class="logo">
+    <img src="images/logo.png" alt="Logo">
+  </div>
+  <nav class="nav">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#resume" class="nav-link">Resume</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <span class="hamburger">&#9776;</span>
+
+  </div>
+</header>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="home-content">
+      <div class="home-left">
+        <h1>Hello, I'm <span class="highlight">Aayush Ranjan</span></h1>
+        <p>I'm a Web Developer passionate about building modern and responsive websites.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/aayush-ranjan-9979992b3" target="_blank" class="btn">LinkedIn</a>
+          <a href="https://github.com/Aayush12Ranjan" target="_blank" class="btn">GitHub</a>
+        </div>
+      </div>
+      <div class="home-right">
+        <img src="images/me.png" alt="Aayush Ranjan">
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill-card" data-skill="90">
+        <img src="images/html.png" alt="HTML">
+        <h3>HTML</h3>
+      </div>
+      <div class="skill-card" data-skill="85">
+        <img src="images/css.png" alt="CSS">
+        <h3>CSS</h3>
+      </div>
+      <div class="skill-card" data-skill="80">
+        <img src="images/js1.png" alt="JavaScript">
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skill-card" data-skill="75">
+        <img src="images/REACT-JS-KOCHI-1024x675.png" alt="React">
+        <h3>React</h3>
+      </div>
+      <div class="skill-card" data-skill="70">
+        <img src="images/node1.png" alt="Node.js">
+        <h3>Node.js</h3>
+      </div>
+      <div class="skill-card" data-skill="70">
+        <img src="images/java.png" alt="Node.js">
+        <h3>java</h3>
+      </div>
+    </div>
+
+    <!-- Skill Popup -->
+    <div id="skill-popup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <h3 id="skill-name"></h3>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <p id="skill-percentage"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="images/port.png" alt="Project 1">
+        <h3>Personal Portfolio</h3>
+        <p>•	Online showcase of skills, projects, and achievements.</br>
+           •	Includes About Me, Portfolio (featuring Gas-Agency-Service and TodoList), Contact 
+          </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/gas.png" alt="Project 2">
+        <h3>Gas Agency Service</h3>
+        <p>•Provides safe and timely LPG gas delivery to homes and businesses.<br>
+          •	Offers hassle-free booking through online, phone, and mobile apps.
+          </p>
+        <a href="https://github.com/Aayush12Ranjan/Gas-Agency-Service.git" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="images/placement.png" alt="Project 3">
+        <h3>placement preparation Website</h3>
+        <p>•	Offers practice for technical, aptitude, and soft skills to help in placement preparation.</br>
+        
+          •	 Displays records of students who got placed or rejected with their details
+          </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+ <!-- Resume Section -->
+<section id="resume" class="section resume-section">
+  <h2>Resume</h2>
+  <div class="resume-content">
+    <div class="resume-card">
+      <h3>Education</h3>
+      <div class="resume-item">
+        <h4>Bachelor of Tecchnology in Computer Science</h4>
+        <p>Maharishi Markandeshwar Demmed to be University (2022-2026)</p>
+        <P>CGPA: 7.7</P>
+      </div>
+      <div class="resume-item">
+        <h4>12th Grade</h4>
+        <p>Sn Sinha Collage Aurangabd (2019-2021)</p>
+        <p>Percentage: 75.9%</p>
+      </div>
+      <div class="resume-item">
+        <h4>10th Grade</h4>
+        <p>Anugrah Inter School Aurangabad (2019)</p>
+        <p>Percentage: 80.4%</p>
+      </div>
+    </div>
+    <div class="resume-card">
+      <h3>Experience</h3>
+      <div class="resume-item">
+        <h4>Web Developer Intern</h4>
+        <p>Unified Mentor</p>
+        <ul>
+          <li>Developed responsive websites using HTML, CSS, and JavaScript.</li>
+          <li>Collaborated with the team to build React-based applications.</li>
+          <li>Improved UI/UX design for better user experience.</li>
+        </ul>
+      </div>
+    </div>
+    <a href="https://drive.google.com/file/d/1JUw7TcbKM2yWLmi45C8Uz7olR_dMxku9/view?usp=drivesdk" class="btn" download>Download Resume</a>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+<section id="contact" class="section contact-section">
+  <h2>Contact Me</h2>
+  <form id="contact-form" class="contact-form" action="https://formspree.io/f/xyzkddrv" method="POST">
+    <div class="form-group">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/in/aayush-ranjan-9979992b3" target="_blank" class="social-link">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Aayush12Ranjan" target="_blank" class="social-link">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="ranjanaayush035@gmail.com" class="social-link">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://x.com/Aayushranj81943?t=tS9_ByrtpXcmLxQpsXaJcQ&s=09" target="_blank" class="social-link">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </div>
+  <p>&copy; 2023 Aayush Ranjan. All rights reserved.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
